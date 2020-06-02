@@ -15,6 +15,8 @@
 # Import the SDK
 import boto3
 import uuid
+import string
+
 
 # boto3 offers two different styles of API - Resource API (high-level) and
 # Client API (low-level). Client API maps directly to the underlying RPC-style
@@ -39,6 +41,7 @@ import uuid
 #    3. AWS IAM role for Amazon EC2 instance
 #       (http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html)
 
+print("app aws")
 s3client = boto3.client('s3')
 
 # Everything uploaded to Amazon S3 must belong to a bucket. These buckets are
